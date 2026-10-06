@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.budget.budget_app",
+      "sha256_cert_fingerprints": [
+        "39:51:B9:8E:FE:B9:4B:51:C0:3A:50:33:47:1C:50:51:E0:D0:75:B3:A7:14:1F:1B:EA:C3:30:9B:35:BF:6C:2A",
+        "0D:99:B3:50:91:09:A4:6C:0E:72:73:6D:F5:AB:4B:6F:13:D1:2B:5D:A8:AF:1C:07:B1:F8:0B:57:79:18:9F:B8"
+      ]
+    }
+  }
+]
