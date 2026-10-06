@@ -41,14 +41,10 @@ a.button { display: block; text-align: center; background: var(--accent); color:
     document.getElementById("title").textContent = "BankSync did not connect";
     document.getElementById("text").textContent =
       "Go back to Budget to try again. Tap the button to return.";
-  } else if (!params.get("code")) {
-    document.getElementById("title").textContent = "Nothing to hand back";
-    document.getElementById("text").textContent =
-      "This page finishes connecting a bank in the Budget app. Open the app to start.";
   }
-  if (query) {
-    window.location.replace(target);
-  }
+  // Always hand back: "add a bank" and "reconnect" return here without a code, and the
+  // app is waiting for them too. Without the app installed, this does nothing.
+  window.location.replace(target);
 </script>
 </body>
 </html>
