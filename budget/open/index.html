@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Budget</title>
+<meta name="robots" content="noindex">
+<style>
+:root { --bg: #f7f5f0; --ink: #1d1d1b; --soft: #6b6a66; --accent: #c2541f; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161615; --ink: #ecebe6; --soft: #a3a19a; --accent: #f08a4b; }
+}
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 560px; margin: 0 auto; padding: 56px 16px; }
+h1 { font-size: 26px; margin: 0 0 8px; }
+p { color: var(--soft); }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <!-- On a phone with Budget installed, Android opens the app for this address (an app link,
+       checked through /.well-known/assetlinks.json), so this page only shows otherwise. -->
+  <h1>Open Budget</h1>
+  <p>If Budget didn't open by itself, open it from your home screen and tap
+  <b>Sign in with BankSync</b>.</p>
+  <p>Not set up yet? <a href="../setup/">Connect Budget to your bank</a>.</p>
+</main>
+</body>
+</html>

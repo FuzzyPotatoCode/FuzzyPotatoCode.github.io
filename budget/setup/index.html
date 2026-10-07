@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect Budget to your bank</title>
+<meta name="description" content="Set up BankSync for the Budget app: create an account, start the free trial and connect your bank, then sign in from Budget. About 5 minutes.">
+<style>
+:root { --bg: #f7f5f0; --card: #ffffff; --ink: #1d1d1b; --soft: #6b6a66; --line: #e4e1d8; --accent: #c2541f; --blue: #2a78d6; --shade: #efece4; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161615; --card: #1f1f1d; --ink: #ecebe6; --soft: #a3a19a; --line: #34332f; --accent: #f08a4b; --blue: #3987e5; --shade: #262624; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 36px 0 10px; }
+h3 { font-size: 17px; margin: 0 0 4px; }
+p { margin: 0 0 12px; }
+.soft { color: var(--soft); }
+a { color: var(--accent); }
+.ready { background: var(--shade); border-radius: 12px; padding: 12px 14px; margin: 16px 0 8px; }
+.step { display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start; background: var(--card);
+        border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin: 14px 0; }
+.step .words { flex: 1 1 280px; min-width: 0; }
+.step img { flex: 0 0 200px; width: 200px; max-width: 100%; height: auto; border-radius: 14px;
+            border: 1px solid var(--line); }
+.num { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff;
+       text-align: center; font-weight: 700; font-size: 14px; line-height: 26px; margin-right: 8px; }
+.btn { display: inline-block; font-weight: 700; text-decoration: none; border-radius: 999px; padding: 10px 20px;
+       margin: 6px 8px 6px 0; color: #fff; background: var(--accent); }
+.btn.blue { background: var(--blue); }
+.faq { border-top: 1px solid var(--line); padding: 12px 0; }
+.faq h3 { margin-bottom: 2px; }
+.faq p { color: var(--soft); margin: 0; }
+footer { margin-top: 36px; color: var(--soft); font-size: 14px; }
+@media (max-width: 480px) { .step img { flex-basis: 100%; width: 100%; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Connect Budget to your bank</h1>
+  <p class="soft">About 5 minutes, once. You'll create a BankSync account, start its free trial
+  and connect your bank, then sign in from Budget. Budget never sees your bank login or your card.</p>
+
+  <div class="ready"><b>Have ready:</b> your phone with your bank's app (your bank sends a
+  one-time code there), and a card for BankSync's free trial. CommBank may also ask for the
+  last 4 digits of your NetBank ID.</div>
+
+  <div class="step">
+    <div class="words">
+      <h3><span class="num">1</span>Create your BankSync account</h3>
+      <p>Sign up with Google, or with your name, email and a password. BankSync emails you a link
+      to confirm your address.</p>
+      <a class="btn" href="https://app.banksync.io/signup">Create my BankSync account</a>
+    </div>
+    <img src="1-sign-up.png" alt="BankSync's sign-up screen: Create your workspace, 14-day free trial, Sign up with Google, or name, email and password" width="390" height="844">
+  </div>
+
+  <div class="step">
+    <div class="words">
+      <h3><span class="num">2</span>Connect your bank</h3>
+      <p>On BankSync's home screen, tap <b>Connect bank account</b> (or <b>Banks</b>, then
+      <b>Connect bank</b>), search for your bank and tap it.</p>
+    </div>
+    <img src="2-bank.png" alt="BankSync's bank search, showing CommBank" width="390" height="844">
+  </div>
+
+  <div class="step">
+    <div class="words">
+      <h3><span class="num">3</span>Start the free trial</h3>
+      <p>Pick a plan. <b>Starter</b> covers one bank: US$5 a month, or US$48 a year. Your card is
+      taken now and charged after 14 days; you can cancel any time in BankSync (Settings,
+      Billing). You pay BankSync, not Budget.</p>
+    </div>
+    <img src="3-plan.png" alt="BankSync's plan picker: Starter at 5 US dollars a month for one bank, Standard at 7" width="390" height="844">
+  </div>
+
+  <div class="step">
+    <div class="words">
+      <h3><span class="num">4</span>Approve at your bank</h3>
+      <p>Your bank's own page opens. Enter your registered mobile number and the one-time code
+      your bank sends to its app, then tick only the accounts you want to share: one is enough to
+      start, and you can add more later.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="words">
+      <h3><span class="num">5</span>Back to Budget</h3>
+      <p>Open Budget and tap <b>Sign in with BankSync</b>. Approve Budget, choose the accounts it
+      may read, and your transactions arrive.</p>
+      <a class="btn blue" href="https://fuzzypotatocode.github.io/budget/open/">Open Budget</a>
+    </div>
+  </div>
+
+  <p class="soft">Stuck at any step? Email <a href="mailto:fuzzypotatoemail@gmail.com?subject=Budget%20setup">fuzzypotatoemail@gmail.com</a> and we'll help.</p>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <h3>Is this safe?</h3>
+    <p>It's Australia's open banking, the Consumer Data Right. You approve at your own bank, nobody
+    else sees your bank login, and you can stop any time.</p>
+  </div>
+  <div class="faq">
+    <h3>Why do I need BankSync?</h3>
+    <p>By law, an accredited company (or its representative) must hold your bank connection.
+    BankSync does that, under Fiskil, which the ACCC has accredited and which keeps data in
+    Australia. BankSync keeps no copy of your transactions.</p>
+  </div>
+  <div class="faq">
+    <h3>Is Budget accredited?</h3>
+    <p>It doesn't need to be. Accreditation is for companies that receive people's bank data, and
+    we never do: your data goes from BankSync straight to Budget on your phone.</p>
+  </div>
+  <div class="faq">
+    <h3>Why isn't the address a link in the app?</h3>
+    <p>Google Play requires apps to sell things through Google's own payments. BankSync's plan is
+    sold by BankSync, so an app on Play can't send you to its checkout with a tap; it can only
+    tell you the address. It's a rule about payments, not about your safety or your data.</p>
+  </div>
+  <div class="faq">
+    <h3>How do I stop?</h3>
+    <p>Disconnect in Budget (Data sources), cancel the plan in BankSync (Settings, Billing), and
+    withdraw the consent in BankSync (Settings, Data sharing) or in your bank's app.</p>
+  </div>
+  <div class="faq">
+    <h3>How does Budget make money?</h3>
+    <p>Right now it doesn't: Budget is free, with no ads, and your data is never sold.</p>
+  </div>
+
+  <footer>Budget is made by XYZ Tech Labs in Australia. <a href="../privacy/">Privacy policy</a>.
+  Screens shown are BankSync's own, on 7 October 2026.</footer>
+</main>
+</body>
+</html>
